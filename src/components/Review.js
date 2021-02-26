@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react'
 
-const Review = ({ product , setProduct }) => {
+const Review = ({ product }) => {
    // console.log(product)
   
    return (

@@ -13,8 +13,28 @@ body {
 }
 
 .card-container {
-  border: 2px solid lemonchiffon;
+  width: 60vw;
+  height: auto;
+  border: 1px solid lemonchiffon;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.product-name {
+  margin-top: 1em;
+}
+
+.price {
+  margin: 1em 0;
+}
+
+.reviews {
+  margin: 2em 0;
+}
+
+.create-review {
+  margin: 2em 0;
+  padding: .5em;
 }

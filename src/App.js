@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import ProductCard from './components/ProductCard'
-// import Products from './components/Products'
-import Review from './components/Review'
 import './App.css';
 
 function App() {
@@ -25,9 +23,9 @@ function App() {
   return (
     <div className="App">
       {product.map((product) => (
-        <ProductCard product={product} />
+        <ProductCard product={ product} />
         ))}
-        <Review key={ product.product_id }product={product} />
+        {/* <Review key={ product.product_id } product={ product } /> */}
     </div>
   );
 }

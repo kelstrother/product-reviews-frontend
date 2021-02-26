@@ -7,14 +7,15 @@ const ProductCard = ({ product }) => {
          <div className="card-container">
            <div className="img-container">
              <img className="product-img" src={ product.img } alt="" />
-             <h1 className="product-name">{product.name}</h1>
-             <h4>{ product.price }</h4>
+             <h1 className="product-name">{ product.name }</h1>
+             <p className="price">cost: ${ product.price }</p>
              <div className="backside-container">
                  {product.reviews.map((reviews) => (
-                    <h1>{reviews.title}</h1>
+                    <p className="reviews">{reviews.title}</p>
                     ))}          
              </div>
            </div>
+           <button className="create-review">Write Review</button>
          </div>
        </>
      );
